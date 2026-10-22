@@ -26,6 +26,7 @@ export function Footer() {
       <span className="rule" />
       <Link to="/" className="footer-mark">Primalora</Link>
       <span className="rule" />
+      <Link to="/shopify-export" className="footer-export">Shopify export</Link>
     </footer>
   );
 }
