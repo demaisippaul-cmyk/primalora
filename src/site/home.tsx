@@ -4,6 +4,13 @@ import { Image } from "../image";
 import { Arrow, Footer, Header } from "./chrome";
 import { startJewelryScene } from "./scene";
 
+export const PHOTO = {
+  model: "/generated-assets/aaeb8e1363e2859a4ace5c4fbecfae488dcfdf39dca9d26760ebaa9663158b77.webp",
+  noir: "/generated-assets/90ec59a7f8a7bb2845a5b1ac31b835f224ea6f023eeb1da761eb58e9a851703f.webp",
+  cluster: "/generated-assets/8bd64f6fb50ba71030d23b9d50bd56e53defbe22c041d1365d3eb99b222e693e.webp",
+  pearl: "/generated-assets/ba99222b817e3568030ff5cbe707afe7f1a3eeb9c82915c35bb6aadab2d286bb.webp",
+};
+
 const IMG = {
   hero: "/generated-assets/07fb211cd478fffac2c0fdd58dedbb60b53f43227c169e857cbde3eb57617c55.webp",
   ring: "/generated-assets/6334e44499ddd8e26c71c0cfedfa92b062a8eccba549a4fe35665b25175546b0.webp",
@@ -25,7 +32,10 @@ export function Home() {
       <Header />
       <main>
         <section className="hero">
-          <Image src={IMG.hero} alt="" width={1440} height={1080} priority className="hero-bg" />
+          <Image src={IMG.hero} alt="" width={1440} height={1080} className="hero-bg" />
+          <figure className="hero-photo">
+            <Image src={PHOTO.model} alt="Woman wearing a pearl drop earring and a pearl ring" width={1001} height={1001} priority sizes="(max-width: 900px) 100vw, 55vw" />
+          </figure>
           <canvas ref={canvas} className="hero-scene" aria-label="Turning gold rings on a fine chain" role="img" />
           <div className="hero-copy">
             <h1 className="visually-hidden">Primalora fine jewelry</h1>
@@ -40,9 +50,9 @@ export function Home() {
             <p>A closer look at the moments that define our world — where light, texture and form become art.</p>
           </div>
           <div className="gallery-grid">
-            <figure className="plate tall"><Image src={IMG.ring} alt="Gold ring with a smoky stone on velvet" width={924} height={980} /></figure>
-            <figure className="plate"><Image src={IMG.clasp} alt="Gold chain clasp on dark stone" width={696} height={486} /></figure>
-            <figure className="plate"><Image src={IMG.earrings} alt="Gold bezel earrings on travertine" width={696} height={458} /></figure>
+            <figure className="plate tall"><Image src={PHOTO.pearl} alt="Pearl pendant and matching drop earrings on cream" width={800} height={800} /></figure>
+            <figure className="plate"><Image src={PHOTO.noir} alt="Dark-stone halo pendant on blue" width={800} height={800} /></figure>
+            <figure className="plate"><Image src={PHOTO.cluster} alt="Cluster necklace of bright stones on blue" width={800} height={800} /></figure>
           </div>
         </section>
 

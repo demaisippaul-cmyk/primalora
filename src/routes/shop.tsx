@@ -1,5 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Image } from "../image";
 import { Footer, Header } from "../site/chrome";
+import { PHOTO } from "../site/home";
 
 export const Route = createFileRoute("/shop")({
   head: () => ({ meta: [
@@ -17,6 +19,11 @@ function Shop() {
         <p className="eyebrow-gold">The Collection</p>
         <h1>Primalora</h1>
         <span className="bar center" />
+        <div className="shop-grid">
+          <figure className="plate"><Image src={PHOTO.noir} alt="Dark-stone halo pendant on blue" width={800} height={800} /></figure>
+          <figure className="plate"><Image src={PHOTO.cluster} alt="Cluster necklace of bright stones on blue" width={800} height={800} /></figure>
+          <figure className="plate"><Image src={PHOTO.pearl} alt="Pearl pendant and matching drop earrings on cream" width={800} height={800} /></figure>
+        </div>
         <div className="shop-empty">
           <svg width="48" height="48" viewBox="0 0 34 34" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth="0.8">
             <circle cx="17" cy="17" r="16" />
