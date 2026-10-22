@@ -10,6 +10,7 @@ export function Header() {
         <a href="/#contacts">Contacts</a>
         <a href="/#about">About Us</a>
         <a href="/#faqs">FAQs</a>
+        <Link to="/size-help">Size help</Link>
       </nav>
       <Link to="/" className="wordmark" aria-label="Primalora home">
         <Image src={LOGO} alt="" width={36} height={36} className="wordmark-mark" />

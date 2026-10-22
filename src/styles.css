@@ -84,6 +84,17 @@ img { display: block; max-width: 100%; }
 .shop { min-height: 80vh; padding: calc(var(--header-h) + 7rem) var(--gutter) 6rem; text-align: center; }
 .eyebrow-gold { letter-spacing: 0.4em; text-transform: uppercase; color: var(--accent); font-size: 0.75rem; }
 .shop h1 { font-size: clamp(2.4rem, 5vw, 4.2rem); }
+.size-help { padding: calc(var(--header-h) + 6rem) var(--gutter) 6rem; background: linear-gradient(180deg, var(--page), var(--cream)); }
+.size-help-inner { max-width: 760px; margin: 0 auto; line-height: 1.75; font-size: 1.02rem; }
+.size-help h1 { font-size: clamp(2rem, 5vw, 3.6rem); text-align: center; }
+.size-help .intro { font-family: var(--font-display); font-style: italic; font-size: 1.3rem; color: var(--muted); text-align: center; margin: 0; }
+.size-help h2 { font-size: clamp(1.1rem, 2.4vw, 1.5rem); margin: 3.4rem 0 1rem; }
+.size-help h3 { font-family: var(--font-display); font-weight: 400; font-size: 1.15rem; margin: 1.8rem 0 0.4rem; }
+.size-steps { list-style: none; counter-reset: step; padding: 0; margin: 0; }
+.size-steps li { counter-increment: step; position: relative; padding: 1.2rem 0 1.2rem 3.6rem; border-top: 1px solid var(--line); }
+.size-steps li::before { content: counter(step, decimal-leading-zero); position: absolute; left: 0; top: 1.1rem; font-family: var(--font-display); font-size: 1.5rem; color: var(--accent); }
+.size-help a { color: var(--ink); text-decoration-color: var(--accent); text-underline-offset: 4px; }
+.size-help .further { margin-top: 3.4rem; padding-top: 1.6rem; border-top: 1px solid var(--line); }
 .shop-grid { max-width: 1200px; margin: 4rem auto 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
 .shop-grid .plate { aspect-ratio: 4/5; }
 .shop-empty { max-width: 640px; margin: 4rem auto 0; padding: 4rem 2rem; border: 1px solid var(--line); background: var(--cream); color: var(--accent); }
